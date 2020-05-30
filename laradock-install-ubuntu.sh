@@ -6,7 +6,7 @@ apt-get update
 # ===============================
 
 # ************************
-# Install Docker's base
+# Install Docker's base  ||
 # ************************
 
 # Set up the repository
@@ -34,7 +34,7 @@ apt-get install docker-ce docker-ce-cli containerd.io
 docker run hello-world
 
 # ************************
-# Install Docker Compose
+# Install Docker Compose ||
 # ************************
 
 # Get current sable release of Docker Compose.
@@ -43,7 +43,7 @@ curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compo
 chmod +x /usr/local/bin/docker-compose
 
 # ================================================
-# Complete Laradock Environment Installation
+# Complete Laradock Environment Installation     ||
 # ================================================
 
 # Clone Laradock repository.
@@ -52,3 +52,8 @@ git clone https://github.com/Laradock/laradock.git ../laradock
 cp env-example .env
 # Execute Laradock installation.
 docker-compose up -d nginx mysql
+
+# ============
+# Finish     ||
+# ============
+echo "Laradock installation finished!"
