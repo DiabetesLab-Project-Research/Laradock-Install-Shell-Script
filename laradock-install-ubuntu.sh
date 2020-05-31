@@ -7,7 +7,7 @@
 # ***
 # How to use:
 # 1. chmod -R 775 "script name".
-# 2. yes | ./"script name"
+# 2. ./"script name"
 # 3. Wait until finished! :)
 # ***
 # A script by Arief Purnama Muharram (ariefpurnamamuharram@gmail.com)
