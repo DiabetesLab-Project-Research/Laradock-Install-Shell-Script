@@ -11,7 +11,7 @@ This automated script will bring you default installation of Apache2 and MySQL.
 
 # Note
 1. Don't use `yes | ./"script name"` as it will encounter error to the installation process.
-2. Don't forget to `chown -R www-data:www-data /var/www` to allow www data transfer.
+2. After execute `docker-compose up`, don't forget to `chown -R www-data:www-data /var/www` to allow www data transfer.
 
 # Credits
 A script by Arief Purnama Muharram (ariefpurnamamuharram@gmail.com).
