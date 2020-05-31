@@ -34,6 +34,7 @@ apt-get install \
     apt-transport-https \
     ca-certificates \
     curl \
+    git \
     gnupg-agent \
     software-properties-common
 # Add Docker official GPG key.
@@ -91,3 +92,4 @@ echo -e "\e[92mLaradock installation finished! \e[0m"
 # ============
 echo -e "\e[92mFinished!"
 echo -e "\e[92mLaradock installation finished! \e[0m"
+echo -e "\e[92mHave a nice day! :)"
