@@ -1,4 +1,20 @@
+# ################################################################
+# Laradock Install Shell Script
+# --------------------------------
+# This shell script provide you an easy way to one-time execute
+# Laradock installation from scratch.
+# This will bring you default installation of nginx and mysql.
+# ***
+# How to use:
+# 1. chmod -R 775 "script name".
+# 2. yes | ./"script name"
+# 3. Wait until finished! :)
+# ***
+# A script by Arief Purnama Muharram (ariefpurnamamuharram@gmail.com)
+# ################################################################
+
 # Update repositories.
+echo -e "\e[93mUpdating repositories..."
 apt-get update
 
 # ===============================
@@ -9,7 +25,8 @@ apt-get update
 # Install Docker's base  ||
 # ************************
 
-echo "Begin Docker's base installation!"
+echo -e "\e[93emWarning!"
+echo -e "\e[93emBegin Docker's base installation!"
 
 # Set up the repository
 # Update apt repository.
@@ -35,26 +52,28 @@ apt-get install docker-ce docker-ce-cli containerd.io
 # Verify Docker installation.
 docker run hello-world
 
-echo "Docker's base installation finished!"
+echo -e "\e[92mDocker's base installation finished!"
 
 # ************************
 # Install Docker Compose ||
 # ************************
 
-echo "Begin Docker Compose installation!"
+echo -e "\e[93mWarning!"
+echo -e "\e[93mBegin Docker Compose installation!"
 
 # Get current sable release of Docker Compose.
 curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 # Apply executable permissions to the library.
 chmod +x /usr/local/bin/docker-compose
 
-echo "Docker Compose installation finished!"
+echo -e "\e[92mDocker Compose installation finished!"
 
 # ================================================
 # Complete Laradock Environment Installation     ||
 # ================================================
 
-echo "Begin Laradock installation!"
+echo -e "\e[93mWarning!"
+echo -e "\e[93mBegin Laradock installation!"
 
 # Clone Laradock repository.
 git clone https://github.com/Laradock/laradock.git ../laradock
@@ -65,9 +84,10 @@ cp env-example .env
 # Execute Laradock installation.
 docker-compose up -d nginx mysql
 
-echo "Laradock installation finished!"
+echo -e "\e[92mLaradock installation finished!"
 
 # ============
 # Finish     ||
 # ============
-echo "Laradock installation finished!"
+echo -e "\e[92mFinished!"
+echo -e "\e[92mLaradock installation finished!"
