@@ -92,4 +92,4 @@ echo -e "\e[92mLaradock installation finished! \e[0m"
 # ============
 echo -e "\e[92mFinished!"
 echo -e "\e[92mLaradock installation finished! \e[0m"
-echo -e "\e[92mHave a nice day! :)"
+echo -e "\e[92mHave a nice day! :) \e[0m"
