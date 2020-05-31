@@ -14,7 +14,7 @@
 # ################################################################
 
 # Update repositories.
-echo -e "\e[93mUpdating repositories..."
+echo -e "\e[93mUpdating repositories... \e[0m"
 apt-get update
 
 # ===============================
@@ -26,7 +26,7 @@ apt-get update
 # ************************
 
 echo -e "\e[93emWarning!"
-echo -e "\e[93emBegin Docker's base installation!"
+echo -e "\e[93emBegin Docker's base installation! \e[0m"
 
 # Set up the repository
 # Update apt repository.
@@ -52,28 +52,28 @@ apt-get install docker-ce docker-ce-cli containerd.io
 # Verify Docker installation.
 docker run hello-world
 
-echo -e "\e[92mDocker's base installation finished!"
+echo -e "\e[92mDocker's base installation finished! \e[0m"
 
 # ************************
 # Install Docker Compose ||
 # ************************
 
 echo -e "\e[93mWarning!"
-echo -e "\e[93mBegin Docker Compose installation!"
+echo -e "\e[93mBegin Docker Compose installation! \e[0m"
 
 # Get current sable release of Docker Compose.
 curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 # Apply executable permissions to the library.
 chmod +x /usr/local/bin/docker-compose
 
-echo -e "\e[92mDocker Compose installation finished!"
+echo -e "\e[92mDocker Compose installation finished! \e[0m"
 
 # ================================================
 # Complete Laradock Environment Installation     ||
 # ================================================
 
 echo -e "\e[93mWarning!"
-echo -e "\e[93mBegin Laradock installation!"
+echo -e "\e[93mBegin Laradock installation! \e[0m"
 
 # Clone Laradock repository.
 git clone https://github.com/Laradock/laradock.git ../laradock
@@ -84,10 +84,10 @@ cp env-example .env
 # Execute Laradock installation.
 docker-compose up -d nginx mysql
 
-echo -e "\e[92mLaradock installation finished!"
+echo -e "\e[92mLaradock installation finished! \e[0m"
 
 # ============
 # Finish     ||
 # ============
 echo -e "\e[92mFinished!"
-echo -e "\e[92mLaradock installation finished!"
+echo -e "\e[92mLaradock installation finished! \e[0m"
