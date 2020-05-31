@@ -5,7 +5,7 @@ This shell script provide you an easy way to one-time execute Laradock installat
 This automated script will bring you default installation of Apache2 and MySQL.
 ```
 1. chmod -R 775 "script name".
-2. yes | ./"script name".
+2. ./"script name".
 3. Wait until finished! :)
 ```
 
