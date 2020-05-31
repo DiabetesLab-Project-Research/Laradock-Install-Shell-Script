@@ -3,7 +3,7 @@
 # --------------------------------
 # This shell script provide you an easy way to one-time execute
 # Laradock installation from scratch.
-# This will bring you default installation of nginx and mysql.
+# This will bring you default installation of apache2 and mysql.
 # ***
 # How to use:
 # 1. chmod -R 775 "script name".
@@ -83,7 +83,7 @@ cd ../laradock
 # Copy .env file.
 cp env-example .env
 # Execute Laradock installation.
-docker-compose up -d nginx mysql
+docker-compose up -d apache2 mysql
 
 echo -e "\e[92mLaradock installation finished! \e[0m"
 
