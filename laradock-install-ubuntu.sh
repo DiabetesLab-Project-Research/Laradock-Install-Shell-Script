@@ -25,8 +25,8 @@ apt-get update
 # Install Docker's base  ||
 # ************************
 
-echo -e "\e[93emWarning!"
-echo -e "\e[93emBegin Docker's base installation! \e[0m"
+echo -e "\e[93mWarning!"
+echo -e "\e[93mBegin Docker's base installation! \e[0m"
 
 # Set up the repository
 # Update apt repository.
