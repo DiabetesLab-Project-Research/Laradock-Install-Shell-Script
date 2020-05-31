@@ -8,3 +8,6 @@ This automated script will bring you default installation of NginX and MySQL.
 2. yes | ./"script name".
 3. Wait until finished! :)
 ```
+
+# Credits
+A script by Arief Purnama Muharram (ariefpurnamamuharram@gmail.com).
